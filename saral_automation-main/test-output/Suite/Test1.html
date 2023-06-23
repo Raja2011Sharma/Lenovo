@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>TestNG:  Test1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 08 19:49:22 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>39 seconds (39426 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.loksabhaKaryakartaRunner.runScenario()'><b>runScenario</b><br>Test class: runner.loksabhaKaryakartaRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Testing loksabha karyakarta add data entry functionality", "Testing data entry for loksabha level karyakarta"</td>
+<td><div><pre>java.lang.AssertionError: expected [1 - Saharanpur &gt;&gt; Core Sangathan &gt;&gt; Office Bearer] but found [&gt;&gt; &gt;&gt;]
+	at stepdefinations.LoksabhaKaryakarta.user_click_on_search_button_and_verify_loksabha_karyakarta_filter_text(LoksabhaKaryakarta.java:119)
+	at ✽.user click on search button and verify loksabha karyakarta filter text(file:///C:/Users/meena/Selenium-Automation/BDD/src/test/resources/features/loksabhaKaryakarta/loksabhaKaryakarta.feature:15)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace647298158", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace647298158'><pre>java.lang.AssertionError: expected [1 - Saharanpur &gt;&gt; Core Sangathan &gt;&gt; Office Bearer] but found [&gt;&gt; &gt;&gt;]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepdefinations.LoksabhaKaryakarta.user_click_on_search_button_and_verify_loksabha_karyakarta_filter_text(LoksabhaKaryakarta.java:119)
+	at ✽.user click on search button and verify loksabha karyakarta filter text(file:///C:/Users/meena/Selenium-Automation/BDD/src/test/resources/features/loksabhaKaryakarta/loksabhaKaryakarta.feature:15)
+</pre></div></td>
+<td>37</td>
+<td>runner.loksabhaKaryakartaRunner@1fa121e2</td></tr>
+<tr>
+<td title='runner.grampanchayatKaryakartaRunner.runScenario()'><b>runScenario</b><br>Test class: runner.grampanchayatKaryakartaRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Testing grampanchayat karyakarta add data and edit entry functionality", "Testing data entry for grampanchayat level karyakarta"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;ng-placeholder&quot;&gt;...&lt;/div&gt; is not clickable at point (122, 229). Other element would receive the click: &lt;div class=&quot;ng-value ng-star-inserted&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=110.0.5481.178)
+Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3f0b99485ff144ded06a49c834bc696b, clickElement {id=693e2454-845b-4b95-9e90-2f7ac9d9c8b1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\meena\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59515}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59515/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (3f0b99485ff144ded06a49c834bc696b)] -&gt; xpath: //div[@class=&apos;ng-placeholder&apos;]]
+Session ID: 3f0b99485ff144ded06a49c834bc696b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at stepdefinations.grampanchayatKaryakarta.user_select_grampanchayat_karyakarta_data_filter(grampanchayatKaryakarta.java:111)
+	at ✽.user select grampanchayat karyakarta data filter(file:///C:/Users/meena/Selenium-Automation/BDD/src/test/resources/features/grampanchayatKaryakarta/grampanchayat.feature:10)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace201951140", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace201951140'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;ng-placeholder&quot;&gt;...&lt;/div&gt; is not clickable at point (122, 229). Other element would receive the click: &lt;div class=&quot;ng-value ng-star-inserted&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=110.0.5481.178)
+Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3f0b99485ff144ded06a49c834bc696b, clickElement {id=693e2454-845b-4b95-9e90-2f7ac9d9c8b1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\meena\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59515}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59515/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (3f0b99485ff144ded06a49c834bc696b)] -&gt; xpath: //div[@class=&apos;ng-placeholder&apos;]]
+Session ID: 3f0b99485ff144ded06a49c834bc696b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at stepdefinations.grampanchayatKaryakarta.user_select_grampanchayat_karyakarta_data_filter(grampanchayatKaryakarta.java:111)
+	at ✽.user select grampanchayat karyakarta data filter(file:///C:/Users/meena/Selenium-Automation/BDD/src/test/resources/features/grampanchayatKaryakarta/grampanchayat.feature:10)
+</pre></div></td>
+<td>31</td>
+<td>runner.grampanchayatKaryakartaRunner@3857f613</td></tr>
+</table><p>
+</body>
+</html>
