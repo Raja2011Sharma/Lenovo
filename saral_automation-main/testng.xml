@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes">
+	<test name="Test1">
+		<classes>
+			<class name="runner.loksabhaKaryakartaRunner"></class>
+			<!--class name="runner.wardKaryakartaRunner"></class>-->
+			<!--class name="runner.pannaRunner"></class>-->
+			<class name="runner.grampanchayatKaryakartaRunner"></class>
+			<!--class name="runner.boothRunner"></class>-->
+			<!--class name="runner.vidhansabhaKaryakartaRunner"></class>-->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
