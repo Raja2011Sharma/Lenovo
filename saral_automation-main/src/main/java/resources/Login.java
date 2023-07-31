@@ -31,7 +31,6 @@ public class Login{
 		WebDriverManager.chromedriver().setup();
 
 		driver.manage().window().maximize();
-
 		driver.get("https://zila-staging.ccdms.in/");
 		
 		NgWebDriver ngDriver = new NgWebDriver((JavascriptExecutor) driver);
@@ -41,12 +40,11 @@ public class Login{
 		loginEmail.sendKeys(username);
 		
 		WebElement loginPassword = driver.findElement(By.name("password"));
-
 		wait.until(ExpectedConditions.visibilityOf(loginPassword));
 		loginPassword.sendKeys(password);
 		ngDriver.withRootSelector("\"app-root\"").waitForAngularRequestsToFinish();
 
-		wait.until(ExpectedConditions
+		wait.until(ExpectedConditions 
 				.elementToBeClickable(driver.findElement(By.xpath("//button/span[contains(text(),'Send OTP')]"))))
 				.click();
 		Thread.sleep(2000);

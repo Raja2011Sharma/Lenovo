@@ -10,7 +10,7 @@ public class ConfigReader {
     public Properties InitProp(){
         prop = new Properties();
         try {
-            FileInputStream ip = new FileInputStream("C:\\Users\\Lenovo\\intellij_workspace\\Com.Saral-Staging\\src\\test\\Resouces\\SaralStagingCOnfig\\Config.properties");
+            FileInputStream ip = new FileInputStream("src/test/Resouces/SaralStagingCOnfig/Config.properties");
             prop.load(ip);
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);

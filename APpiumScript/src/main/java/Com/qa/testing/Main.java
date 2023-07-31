@@ -41,7 +41,7 @@ public class Main {
 
             URL remoteUrl = new URL("http://127.0.0.1:4723/wd/hub");
             driver = new AndroidDriver(remoteUrl, caps);
-            driver.findElement(By.id("com.android.permissioncontroller:id/permission_allow_button")).click();
+//            driver.findElement(By.id("com.android.permissioncontroller:id/permission_allow_button")).click();
             Thread.sleep(3000);
             driver.findElement(By.id("com.saral.application:id/et_mobile")).sendKeys("5111909070");
             driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ScrollView/android.view.ViewGroup/android.widget.Button")).click();

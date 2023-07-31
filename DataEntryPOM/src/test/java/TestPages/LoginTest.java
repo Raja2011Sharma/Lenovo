@@ -14,7 +14,8 @@ public class LoginTest extends TestBase {
 
     @Test
     public void logintest() throws InterruptedException {
-       loginpage.doLogin("sarada.assam.admin@gmail.com","Sarada@123","010203");
+       loginpage.doLogin("6786780011");
+      loginpage.enterOTP("010203");
     }
     @Test
     public void LoginTitleTest(){

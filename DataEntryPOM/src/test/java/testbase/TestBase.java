@@ -25,6 +25,6 @@ public class TestBase {
     }
     @AfterTest
     public void teardown(){
-        page.context().browser().close();
+       page.context().browser().close();
     }
 }
